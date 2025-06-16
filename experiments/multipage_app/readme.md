@@ -40,6 +40,13 @@ This project demonstrates how to build a multi-screen (multi-page) application u
 
 ---
 
+## Simulation Video
+
+Watch the multi-page application simulation in action on YouTube:  
+[**View video on YouTube**](https://youtu.be/YOUR_VIDEO_LINK)
+
+---
+
 ## Reference
 
 This project follows the tutorial:  
