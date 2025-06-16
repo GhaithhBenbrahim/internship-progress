@@ -1,8 +1,64 @@
-# STM32H7B3I-DK TBS
+# Counter Project - TouchGFX
 
-The default IDE is set to STM32CubeIDE, to change IDE open the STM32H7B3I-DK.ioc with STM32CubeMX and select from the supported IDEs (STM32CubeIDE, EWARM, and MDK-ARM).\n\nSupports flashing of the STM32H7B3I-DK board directly from TouchGFX Designer using GCC and STM32CubeProgrammer. Flashing the board requires STM32CubeProgrammer which can be downloaded from the ST webpage.
+This project is a simple counter application implemented using **TouchGFX Designer** and **STM32CubeIDE**.
 
-This TBS is configured for 272 x 480 pixels 24bpp screen resolution.
+---
 
-Performance testing can be done using the GPIO pins designated with the following signals: VSYNC_FREQ - Pin PH14 (D0), RENDER_TIME - Pin PH13 (D1), FRAME_RATE - Pin PI9 (D2), MCU_ACTIVE - Pin PH9 (D3).
+## Project Overview
 
+- Displays a counter on a TouchGFX UI.
+- Allows you to increment or decrement the counter with a button press.
+- Shows how to use **wildcards** in TextArea widgets to reflect dynamic values.
+
+---
+
+## Features
+
+- **Dynamic Text Display** with wildcards.
+- **User Interaction** with increment and decrement buttons.
+- **Clean UI-Logic Separation** — UI designed in TouchGFX Designer; application implemented in C++.
+
+---
+
+## How It Works
+
+- The TextArea widget contains a wildcard (like `%s`) in TouchGFX Designer.
+- The application maintains a buffer for this wildcard and refreshes it when the counter is updated.
+
+---
+
+## Simulation Video
+
+Watch the counter in action on YouTube:  
+[**View video on YouTube**]([https://youtu.be/YOUR_VIDEO_LINK](https://youtu.be/llw6tRPuS-E))
+
+---
+
+## Code Sketch (Key Parts)
+
+```cpp
+void Screen1View::down_clicked()
+{
+counter--;
+if (counter<=0) counter = 0;
+Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%d", counter);
+textArea1.invalidate();
+}
+void Screen1View::up_clicked()
+{
+counter++;
+Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%d", counter);
+textArea1.invalidate();
+}
+```
+
+## How to Build and Run
+
+1. Open in **STM32CubeIDE**.
+2. Generate code with **TouchGFX Designer**.
+3. Build and flash to your STM32 board or run the TouchGFX Simulator.
+4. Use the UI to increment or decrement the counter.
+
+---
+
+✨ Feel free to reuse or modify this example for your own projects! 
