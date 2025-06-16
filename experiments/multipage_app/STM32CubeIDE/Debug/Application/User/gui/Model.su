@@ -1,0 +1,4 @@
+C:/TouchGFXProjects/multipage_app/TouchGFX/gui/src/model/Model.cpp:4:1:Model::Model()	16	static
+C:/TouchGFXProjects/multipage_app/TouchGFX/gui/src/model/Model.cpp:9:6:void Model::tick()	16	static
+C:/TouchGFXProjects/multipage_app/TouchGFX/gui/src/model/Model.cpp:14:6:void Model::saveToggleButton(bool)	16	static
+C:/TouchGFXProjects/multipage_app/TouchGFX/gui/src/model/Model.cpp:19:6:bool Model::getToggleButton()	16	static
