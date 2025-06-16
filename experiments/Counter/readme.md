@@ -30,7 +30,7 @@ This project is a simple counter application implemented using **TouchGFX Design
 ## Simulation Video
 
 Watch the counter in action on YouTube:  
-[**View video on YouTube**]([https://youtu.be/YOUR_VIDEO_LINK](https://youtu.be/llw6tRPuS-E))
+[**View video on YouTube**](https://youtu.be/llw6tRPuS-E)
 
 ---
 
