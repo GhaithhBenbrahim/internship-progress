@@ -235,8 +235,6 @@ Phase 1: UART (Development)
 Phase 2: CAN-FD (Production)
     Jetson Nano ←→ CAN-FD ←→ STM32G474
     
-Phase 3: Multi-node (Future)
-    Jetson Nano ←→ CAN-FD Network ←→ Multiple STM32 Controllers
 ```
 
 ### Advantages of CAN-FD
