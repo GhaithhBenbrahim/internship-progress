@@ -252,11 +252,9 @@ graph LR
     
     A1[Jetson Nano] -.->|UART| A2[STM32G474]
     B1[Jetson Nano] -.->|CAN-FD| B2[STM32G474]
-    C1[Jetson Nano] -.->|CAN-FD Network| C2[Multiple Controllers]
     
     style A fill:#ffcc99
     style B fill:#99ccff
-    style C fill:#99ff99
 ```
 
 ### 🚀 CAN-FD Advantages
